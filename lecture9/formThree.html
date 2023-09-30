@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Three</title>
+  </head>
+
+  <body>
+    <h2>Complex Form</h2>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="emailId">Name</label>
+        <input type="email" name="emailId" id="emailId">
+
+        <label for="phone">Name</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="datePicker">Date of Birth</label>
+        <input type="date" name="datePicker" id="datePicker">
+
+        <label for="gender">Gender</label>
+        
+            <input type="radio" name="radio" id="male"> 
+            <label for="male">Male</label>
+            
+            <input type="radio" name="radio" id="female">
+            <label for="female">Female</label>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="us">United States</option>
+            <option value="ind">India</option>
+            <option value="ken">Kenya</option>
+            <option value="aus">Australia</option>
+        </select>
+    </fieldset>
+        
+
+    <fieldset>
+        <legend>Address
+        
+        <label for="street">Street</label>
+        <input type="text" name="street" id="street">
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+
+        <label for="state">State</label>
+        <input type="text" name="state" id="state">
+
+        <label for="zipCode">Zip Code</label>
+        <input type="number" name="zipCode" id="zipCode">
+        </legend>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Information</legend>
+        <label for="comments"> Comments</label>
+        <textarea name="comments" id="comments" cols="100" rows="5"></textarea>
+
+        <label for="checkbox1">I agree to the term of services</label>
+        <input type="checkbox" name="checkbox1" id="checkbox1">
+    </fieldset>
+
+    <button>Submit</button>
+  </body>
+</html>
