@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipe Card</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: #cdd6da;
+        background-image: linear-gradient(160deg, #10678d 0%, #464963 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card{
+        width: 800px;
+        height: 400px;
+        background-color: #4e094c;
+        display: flex;
+        /* position: relative; */
+        overflow: hidden;
+        
+      }
+
+      .leftBox{
+        width: 50%;
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .statBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+
+
+      /* .rightBox{
+
+      } */
+
+
+
+      img{
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="card">
+
+        <div class="leftBox">
+          <div class="heading">
+            <h1>Get insights that help your business grow</h1>
+          </div>
+
+          <div class="paraBox">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              nam labore cum officia, velit repellat vitae! Soluta odit at est!
+            </p>
+          </div>
+
+          <div class="statBox">
+            <div class="commentBox">
+              <h2>10K+</h2>
+              <p>Comments</p>
+            </div>
+            <div class="paidUserBox">
+              <h2>214</h2>
+              <p>Paid Users</p>
+            </div>
+            <div class="viewsBox">
+              <h2>12M+</h2>
+              <p>Views</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightBox">
+          <img src="icon.jpg" alt="icon" />
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
