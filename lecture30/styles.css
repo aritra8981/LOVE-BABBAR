@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 85vw;
+    height: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+}
+
+.headerContainer{
+    margin-bottom: 2.8rem;
+}
+
+.headerTitle{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.headerDesc{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+
+.cardContainer{
+    display: grid;
+    gap: 1.5rem;
+    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat();
+}
+
+@media (min-width:935px){
+    .cardContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1380px){
+    .cardContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:1870px){
+    .cardContainer{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid rgb(204, 194, 194);
+    border-radius: 5px;
+}
+
+.cardImageBox{
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+
+@media(min-width: 768px){
+    .cardImageBox{
+        height: 12rem;
+    }
+}
+
+.cardImage{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.textbox{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.cardTitle{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(24, 22, 22);
+}
+
+.cardDesc{
+    color: rgb(92, 86, 86);
+    font-size: 1rem;
+}
+
+.cardFooterBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.authContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatarContainer{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 50%;
+    background-color: rgb(207, 201, 201);
+}
+
+.authorInfoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.authName{
+    color: rgb(62, 62, 173);
+}
+
+.authDate{
+    color: rgb(136, 127, 127);
+}
+
+.tagContainer{
+    font-size: 0.79rem;
+    border: 1px solid rgb(78, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: grey;
+}
+
+.cardTitle_anchor:hover .cardTitle{ 
+    color: rgb(45, 45, 168);
+}
+
+.cardContainer:hover .cardImage{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
